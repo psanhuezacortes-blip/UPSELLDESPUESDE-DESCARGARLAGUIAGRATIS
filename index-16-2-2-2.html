@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu guía ya está en camino | Diagnóstico Inicial USD $39</title>
+<meta name="description" content="Tu guía ya está en camino. El siguiente paso es confirmar si tu caso tiene ruta real: Diagnóstico Inicial de 45 minutos, USD $39.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'EB Garamond',serif;
+  font-weight:300;font-size:24px;line-height:1.75;
+  background:#ffffff;color:#0d0d0d;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+:root{
+  --black:#ffffff;--deep:#0d0d0d;--panel:#1a1a1a;
+  --cream:#0d0d0d;--off:#1a1a1a;
+  --gold:#c9703f;--gold2:#d98f5a;--gold3:#e8b083;
+  --muted:rgba(13,13,13,0.88);
+  --muted-inv:#ffffff;
+  --hair:rgba(201,112,63,0.2);
+  --hair-inv:rgba(201,112,63,0.25);
+  --max:900px;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.022'/%3E%3C/svg%3E");
+}
+.w{max-width:var(--max);margin:0 auto;padding:0 48px;}
+@media(max-width:600px){.w{padding:0 28px;}}
+
+.r{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);}
+.r.on{opacity:1;transform:none;}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.26s}.d4{transition-delay:.36s}.d5{transition-delay:.46s}
+
+.eyebrow{display:block;font-size:11px;font-weight:700;letter-spacing:6px;text-transform:uppercase;color:var(--gold);margin-bottom:24px;}
+.body{font-size:clamp(19px,1.8vw,24px);font-weight:300;line-height:1.95;color:var(--muted);text-align:justify;}
+.body strong{color:var(--cream);font-weight:400;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:none;}}
+
+/* ── BUTTONS ── */
+.btn-gold{
+  display:inline-block;
+  background:linear-gradient(105deg,#a85a35 0%,#d98f5a 35%,#f2c9a0 55%,#d98f5a 75%,#a85a35 100%);
+  color:#0d0d0d;
+  font-size:11px;font-weight:400;letter-spacing:6px;text-transform:uppercase;
+  padding:22px 64px;text-decoration:none;
+  border:none;border-radius:0;
+  position:relative;overflow:hidden;
+  transition:transform .4s cubic-bezier(.16,1,.3,1), box-shadow .4s ease;
+  box-shadow:0 2px 8px rgba(201,112,63,0.12);
+  cursor:pointer;
+}
+.btn-gold:hover{transform:translateY(-4px);box-shadow:0 6px 16px rgba(201,112,63,0.2);}
+.btn-gold:active{transform:translateY(-1px);}
+
+.btn-outline{
+  display:inline-block;background:var(--gold);
+  font-size:11px;font-weight:400;letter-spacing:6px;text-transform:uppercase;
+  padding:22px 64px;text-decoration:none;
+  border:1px solid var(--gold);color:#0d0d0d;
+  position:relative;overflow:hidden;
+  transition:transform .4s cubic-bezier(.16,1,.3,1), color .35s, box-shadow .4s;
+}
+.btn-outline::after{
+  content:'';position:absolute;bottom:0;left:0;width:100%;height:0;
+  background:var(--gold);transition:height .45s cubic-bezier(.16,1,.3,1);z-index:0;
+}
+.btn-outline > *{position:relative;z-index:1;}
+.btn-outline:hover{color:#0d0d0d;transform:translateY(-4px);box-shadow:0 8px 24px rgba(201,112,63,0.22);}
+.btn-outline:hover::after{height:100%;}
+.btn-outline:active{transform:translateY(-1px);}
+.cierre .btn-outline{border-color:rgba(201,112,63,0.55);background:rgba(201,112,63,0.85);color:#0d0d0d;}
+
+@media(max-width:600px){
+  .btn-gold,.btn-outline{padding:16px 32px;font-size:10px;letter-spacing:3px;}
+}
+
+/* ── HERO / CONFIRMACIÓN ── */
+.hero{
+  padding:120px 0 40px;text-align:center;
+  background:var(--black);position:relative;overflow:hidden;
+}
+.hero::after{
+  content:'';position:absolute;top:-200px;right:-200px;
+  width:700px;height:700px;border-radius:50%;
+  pointer-events:none;
+}
+.hero-check{
+  width:56px;height:56px;margin:0 auto 32px;border-radius:50%;
+  border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;
+  color:var(--gold);font-size:24px;animation:fadeUp .8s .05s both;
+}
+.hero-kicker{
+  font-size:11px;font-weight:600;letter-spacing:6px;text-transform:uppercase;
+  color:var(--gold);display:block;margin-bottom:28px;animation:fadeUp .8s .1s both;
+}
+.hero-h1{
+  font-family:'Bodoni Moda',serif;font-weight:300;
+  font-size:clamp(42px,6.4vw,84px);line-height:1.08;letter-spacing:-1px;
+  color:var(--cream);margin-bottom:32px;max-width:760px;margin-left:auto;margin-right:auto;
+  animation:fadeUp 1.1s .2s cubic-bezier(.16,1,.3,1) both;
+}
+.hero-deck{
+  font-size:clamp(20px,2.2vw,26px);font-weight:400;line-height:1.6;color:var(--cream);
+  max-width:640px;margin:0 auto;text-align:center;
+  animation:fadeUp .9s .35s cubic-bezier(.16,1,.3,1) both;
+}
+
+/* ── SITUACIONES ── */
+.situaciones{padding:24px 0 40px;}
+.situaciones-title{
+  text-align:center;font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(28px,3.6vw,42px);color:var(--cream);line-height:1.25;
+  max-width:760px;margin:0 auto;
+}
+.sit-list{margin-top:16px;}
+.sit-item{
+  display:flex;gap:24px;align-items:flex-start;padding:26px 0;
+  border-bottom:1px solid var(--hair);
+}
+.sit-num{
+  font-family:'Bodoni Moda',serif;font-style:italic;font-size:32px;
+  color:var(--gold);flex-shrink:0;width:44px;
+}
+.sit-text{font-size:clamp(18px,1.8vw,22px);color:var(--muted);line-height:1.65;text-align:justify;}
+.cuarta{
+  text-align:center;margin-top:56px;
+  font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(32px,4vw,48px);color:var(--cream);opacity:1;
+}
+.salto-block{max-width:900px;margin:64px auto 0;text-align:center;}
+.salto-title{
+  font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(56px,7.5vw,92px);color:var(--cream);margin-bottom:22px;line-height:1.05;
+}
+.salto-deck{font-size:clamp(24px,2.6vw,32px);font-weight:600;color:var(--cream);margin-bottom:28px;line-height:1.4;letter-spacing:.03em;}
+.salto-text{font-size:clamp(21px,2.2vw,27px);color:var(--muted);line-height:1.85;text-align:center;}
+.salto-text strong{color:var(--cream);font-weight:700;}
+
+/* ── OFERTA ── */
+.oferta{padding:88px 0;background:#ffffff;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);}
+.oferta-head{text-align:center;margin-bottom:44px;}
+.oferta .eyebrow{color:var(--gold);font-size:13px;letter-spacing:5px;margin-bottom:14px;}
+.oferta-title{
+  font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(38px,5vw,58px);color:var(--cream);line-height:1.1;margin-bottom:6px;
+}
+.oferta-meta{
+  font-size:15px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);
+}
+.inc-grid{display:flex;flex-direction:column;gap:14px;margin-bottom:44px;border:1px solid rgba(201,112,63,0.18);padding:36px;}
+.inc-item{display:flex;gap:22px;align-items:flex-start;padding:8px 0;}
+.inc-mark{
+  color:#0d0d0d;font-size:15px;font-weight:700;flex-shrink:0;
+  width:32px;height:32px;border-radius:50%;
+  background:linear-gradient(135deg,#e8b083,#c9703f);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 3px 10px rgba(201,112,63,0.3);
+}
+.inc-text{font-size:clamp(19px,2vw,23px);font-weight:500;color:var(--cream);line-height:1.55;text-align:justify;letter-spacing:.01em;}
+@media(max-width:600px){.inc-grid{padding:22px;}}
+.oferta-lede{
+  text-align:center;font-family:'Bodoni Moda',serif;font-weight:700;
+  font-size:clamp(24px,2.8vw,32px);color:var(--gold);margin-bottom:36px;
+}
+.oferta-note{
+  font-size:clamp(17px,1.6vw,20px);color:var(--muted);
+  line-height:1.85;text-align:justify;margin-top:40px;
+}
+.oferta-note strong{color:var(--cream);font-weight:400;}
+
+
+/* ── 7 PASOS ── */
+.pasos{padding:88px 0;}
+.pasos-head{text-align:center;margin-bottom:48px;}
+.pasos-head .eyebrow{font-size:13px;letter-spacing:5px;}
+.pasos-title{
+  font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(36px,4.8vw,56px);color:var(--cream);line-height:1.15;margin-bottom:18px;
+}
+.pasos-lede{font-size:clamp(19px,2vw,24px);color:var(--muted);}
+.pasos-lede strong{color:var(--cream);font-weight:400;}
+.pasos-list{counter-reset:paso;}
+.paso-item{
+  counter-increment:paso;display:flex;gap:24px;align-items:flex-start;
+  padding:28px 0;border-bottom:1px solid var(--hair);
+}
+.paso-item::before{
+  content:counter(paso,decimal-leading-zero);
+  font-family:'Bodoni Moda',serif;font-size:30px;color:var(--gold);flex-shrink:0;width:44px;line-height:1.3;
+}
+.paso-title{font-size:clamp(19px,1.9vw,23px);color:var(--cream);font-weight:500;margin-bottom:8px;}
+.paso-text{font-size:clamp(17px,1.6vw,19px);color:var(--muted);line-height:1.7;text-align:justify;}
+.paso-item.destacado{margin:0 -24px;padding:28px 24px;border-bottom:none;}
+.paso-item.destacado .paso-title{color:var(--cream);}
+.paso7-nota{
+  margin-top:20px;font-size:clamp(17px,1.6vw,20px);color:var(--muted);
+  line-height:1.85;text-align:justify;
+}
+
+/* ── GARANTÍA ── */
+.garantia{padding:80px 0;background:#ffffff;text-align:center;}
+.garantia-title{
+  font-family:'Bodoni Moda',serif;font-weight:700;
+  font-size:clamp(44px,5.8vw,68px);color:var(--cream);margin-bottom:28px;line-height:1.1;
+}
+.garantia-text{
+  font-size:clamp(18px,1.8vw,22px);color:var(--muted);
+  max-width:680px;margin:0 auto 28px;line-height:1.7;
+}
+.garantia-list{list-style:none;max-width:520px;margin:0 auto 28px;text-align:left;}
+.garantia-list li{
+  padding:10px 0 10px 30px;position:relative;color:var(--cream);
+  font-size:clamp(17px,1.6vw,20px);
+}
+.garantia-list li::before{content:'—';position:absolute;left:0;color:var(--gold);}
+.garantia-foot{
+  font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(30px,3.6vw,44px);color:var(--cream);line-height:1.2;
+}
+
+/* ── PARA QUIÉN ── */
+.empatia{padding:88px 0;}
+.empatia-heading{
+  font-family:'Bodoni Moda',serif;font-weight:300;
+  font-size:clamp(30px,4vw,50px);color:var(--cream);margin-bottom:36px;
+}
+.empatia-heading em{font-style:italic;font-weight:600;color:var(--gold2);}
+.dolor-grid{display:flex;flex-direction:column;gap:0;}
+.dolor-item{
+  display:flex;gap:18px;align-items:flex-start;padding:18px 0;
+  border-bottom:1px solid var(--hair);
+}
+.dolor-dash{color:var(--gold);font-size:18px;font-weight:700;flex-shrink:0;}
+.dolor-text{font-size:clamp(17px,1.7vw,21px);color:var(--muted);line-height:1.6;text-align:justify;}
+
+/* ── CIERRE ── */
+.cierre{
+  padding:100px 0;background:#ffffff;text-align:center;border-top:1px solid var(--hair);
+}
+.cierre-h{
+  font-family:'Bodoni Moda',serif;font-weight:300;
+  font-size:clamp(34px,5.2vw,64px);line-height:1.15;color:var(--cream);margin-bottom:40px;
+}
+.cierre-h em{font-style:italic;font-weight:600;color:var(--gold2);}
+.cierre-note{
+  margin-top:26px;font-size:13px;letter-spacing:2px;text-transform:uppercase;
+  color:rgba(13,13,13,0.5);
+}
+.cupos{
+  font-size:15px;font-weight:700;letter-spacing:1px;color:var(--gold2);margin-bottom:36px;
+}
+
+footer{
+  background:#ffffff;padding:48px 24px 32px;text-align:center;
+  border-top:1px solid var(--hair);
+}
+.foot-name{
+  font-family:'Bodoni Moda',serif;font-style:italic;font-size:20px;
+  color:var(--cream);margin-bottom:8px;
+}
+.foot-role{
+  font-size:12px;font-weight:300;letter-spacing:2px;color:var(--cream);opacity:.55;
+}
+
+/* ── HONESTIDAD ── */
+.honest-title{
+  text-align:center;font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(32px,4vw,48px);color:var(--cream);margin:56px 0 24px;
+}
+
+/* ── TESTIMONIOS ── */
+.testimonios{padding:80px 0;background:#ffffff;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);}
+.testimonios-title{
+  text-align:center;font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(32px,4vw,46px);color:var(--cream);margin-bottom:48px;line-height:1.2;
+}
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+@media(max-width:760px){.testi-grid{grid-template-columns:1fr;}}
+.testi-card{
+  border:1px solid rgba(201,112,63,0.18);
+  padding:24px;text-align:center;
+}
+.testi-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:18px;background:#000;}
+.testi-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+.testi-name{
+  font-family:'Bodoni Moda',serif;font-style:italic;font-weight:400;
+  font-size:clamp(18px,1.9vw,22px);color:var(--cream);line-height:1.4;margin-bottom:10px;
+}
+.testi-badge{
+  font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);
+}
+
+/* ── LO QUE OBTIENES ── */
+.obtienes{padding:88px 0;}
+.obtienes-title{
+  text-align:center;font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(34px,4.4vw,52px);color:var(--cream);margin-bottom:48px;line-height:1.2;
+}
+.get-list{display:flex;flex-direction:column;gap:0;}
+.get-item{padding:26px 0;border-bottom:1px solid var(--hair);}
+.get-title{
+  font-size:clamp(19px,2vw,23px);font-weight:600;color:var(--cream);margin-bottom:10px;
+}
+.get-title::before{content:'✓  ';color:var(--gold);}
+.get-text{font-size:clamp(17px,1.6vw,20px);color:var(--muted);line-height:1.75;text-align:justify;}
+.obtienes-note{
+  margin-top:40px;font-size:clamp(18px,1.8vw,22px);color:var(--muted);
+  line-height:1.8;text-align:center;max-width:720px;margin-left:auto;margin-right:auto;
+}
+
+/* ── AUDITORÍA CTA ── */
+.audit-box{
+  max-width:720px;margin:0 auto;text-align:center;
+  border:1px solid rgba(201,112,63,0.18);
+  padding:48px 36px;
+}
+.audit-eyebrow{font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block;}
+.audit-price{font-family:'Bodoni Moda',serif;font-size:clamp(40px,5vw,56px);color:var(--cream);margin-bottom:14px;}
+.audit-text{font-size:clamp(17px,1.6vw,20px);color:var(--muted);margin-bottom:32px;line-height:1.7;}
+
+/* ── PAGO / INVERSIÓN ── */
+.pago{padding:80px 0;background:#ffffff;border-top:1px solid var(--hair);}
+.pago-title{
+  text-align:center;font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(30px,3.8vw,44px);color:var(--cream);margin-bottom:32px;line-height:1.2;
+}
+.pago-text{font-size:clamp(18px,1.8vw,22px);color:var(--muted);line-height:1.85;text-align:justify;margin-bottom:22px;}
+.pago-text strong{color:var(--cream);font-weight:600;}
+.pago-nota{
+  margin-top:48px;text-align:center;font-family:'Bodoni Moda',serif;
+  font-size:clamp(22px,2.4vw,28px);color:var(--cream);line-height:1.5;
+}
+
+/* ── FAQ ── */
+.faq{padding:88px 0;}
+.faq-title{
+  text-align:center;font-family:'Bodoni Moda',serif;font-weight:400;
+  font-size:clamp(32px,4vw,48px);color:var(--cream);margin-bottom:44px;line-height:1.2;
+}
+.faq-item{border-bottom:1px solid var(--hair);}
+.faq-item summary{
+  cursor:pointer;list-style:none;padding:22px 0;
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+  font-size:clamp(18px,1.8vw,21px);color:var(--cream);font-weight:500;
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:'+';color:var(--gold);font-size:22px;flex-shrink:0;}
+.faq-item[open] summary::after{content:'–';}
+.faq-answer{padding:0 0 24px;font-size:clamp(17px,1.6vw,19px);color:var(--muted);line-height:1.8;text-align:justify;}
+</style>
+</head>
+<body>
+
+<main>
+
+<!-- 1. CONFIRMACIÓN -->
+<section class="hero" aria-label="Confirmación de descarga">
+  <div class="w">
+    <div class="hero-check r">✓</div>
+    <span class="hero-kicker r d1">Tu guía va en camino</span>
+    <h1 class="hero-h1 r d2">Tu guía ya está en camino</h1>
+    <p class="hero-deck r d3">Ahora se abren dos caminos ante ti.<br>Uno es leer la guía con calma y seguir explorando por tu cuenta. El otro es avanzar hoy mismo, con total claridad, a través de la Abogada Paulina Sanhueza, con 11 años de experiencia trabajando directamente con chilenos en el exterior.</p>
+  </div>
+</section>
+
+<!-- 2. EL SALTO INTERNACIONAL -->
+<section class="situaciones" aria-label="El Salto Internacional">
+  <div class="w">
+    <div class="salto-block r d5">
+      <h2 class="salto-title">El Salto Internacional.</h2>
+      <p class="salto-deck">Es la ruta legal directa que ha permitido a más de 300 chilenos en el extranjero cerrar su divorcio en Chile en 90 días — sin viajar, sin acudir al consulado y sin depender de la voluntad de su expareja.</p>
+    </div>
+    <h3 class="honest-title r">¿Seamos honestos?</h3>
+    <p class="salto-text r d1">El divorcio para un chileno en el extranjero no es un simple trámite administrativo; es una transición de vida que ocurre en dos países distintos al mismo tiempo. Intentar resolver tu situación con información genérica de internet es como intentar navegar un océano con un mapa de ciudad; es la receta exacta para la frustración, el gasto innecesario y el estancamiento legal. <strong>El Salto Internacional no es un servicio tradicional, es un sistema legal diseñado para que tu estatus en Chile refleje finalmente tu realidad actual, sin obstáculos.</strong></p>
+  </div>
+</section>
+
+<!-- 3. TESTIMONIOS -->
+<section class="testimonios" aria-label="Historias reales, resueltas a distancia">
+  <div class="w">
+    <h2 class="testimonios-title r">Historias reales, resueltas a distancia</h2>
+    <div class="testi-grid r d1">
+      <div class="testi-card">
+        <div class="testi-video-wrap">
+          <iframe src="https://player.vimeo.com/video/1158231195" title="Testimonio Sol, Japón" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="testi-name">Sol — Japón</p>
+        <span class="testi-badge">Testimonio verificado</span>
+      </div>
+      <div class="testi-card">
+        <div class="testi-video-wrap">
+          <iframe src="https://player.vimeo.com/video/1158228893" title="Testimonio Pedro H., Turquía" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="testi-name">Pedro H. — Turquía</p>
+        <span class="testi-badge">Testimonio verificado</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. INVERSIÓN -->
+<section class="oferta" aria-label="Tu inversión en certeza">
+  <div class="w">
+    <h2 class="oferta-title r" style="text-align:center;">Tu Inversión en Certeza</h2>
+    <p class="oferta-note r d1" style="margin-top:24px;">Esta consulta es tu seguro de ahorro. Mientras otros pueden terminar gastando miles de dólares en viajes, gestiones consulares o trámites innecesarios, tú inviertes en una ruta clara, personalizada y segura, diseñada para que avances con tranquilidad y la confianza de saber que estás tomando las decisiones correctas desde el principio.</p>
+    <p class="oferta-note r d2">El valor de esta experiencia incluye una revisión completa de tu situación y el diseño de una Ruta Personalizada para ti. Por eso, el valor real de esta sesión supera los <strong>USD $250</strong>.</p>
+    <div class="audit-box r d3" style="margin-top:40px;">
+      <span class="audit-eyebrow">Hoy tu inversión es</span>
+      <div class="audit-price">USD $39</div>
+      <a href="https://pay.hotmart.com/M106893076E?checkoutMode=10" target="_blank" class="btn-gold">Reservar ahora</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. LO QUE OBTIENES -->
+<section class="obtienes" aria-label="Esto es exactamente lo que obtienes">
+  <div class="w">
+    <h2 class="obtienes-title r">Esto es exactamente lo que obtienes.</h2>
+    <div class="get-list r d1">
+      <div class="get-item">
+        <div class="get-title">Diagnóstico de tu situación jurídica</div>
+        <p class="get-text">Analizamos los antecedentes de tu matrimonio, tu separación, dónde vives actualmente y las circunstancias de tu ex cónyuge. ¿Para qué te sirve? Para entender si tu caso está en condiciones de avanzar y cuáles son los factores jurídicos que debemos considerar antes de iniciar cualquier trámite.</p>
+      </div>
+      <div class="get-item">
+        <div class="get-title">Definición de la ruta que corresponde a tu caso</div>
+        <p class="get-text">No todos los divorcios de chilenos que viven en el extranjero se procesan exactamente de la misma manera. Analizamos si tu situación apunta a un divorcio de mutuo acuerdo, una vía unilateral o si existe algún antecedente que deba revisarse antes. Sales sabiendo qué camino tiene sentido para tu situación.</p>
+      </div>
+      <div class="get-item">
+        <div class="get-title">Detección de posibles bloqueos</div>
+        <p class="get-text">Revisamos anticipadamente los puntos que podrían complicar tu proceso: situación y ubicación de tu ex cónyuge; competencia del tribunal; notificación internacional; documentos que podrían faltar o necesitar actualización; elementos de tu caso que involucren a Chile y otro país. La idea es detectar el problema antes de que se convierta en meses de retraso o gastos innecesarios.</p>
+      </div>
+      <div class="get-item">
+        <div class="get-title">Revisión de tus documentos</div>
+        <p class="get-text">Te indicamos qué antecedentes necesitas reunir y cuáles debemos revisar con mayor atención. Dejas de buscar documentos "por si acaso" y sabes qué necesitas preparar para el siguiente paso.</p>
+      </div>
+      <div class="get-item">
+        <div class="get-title">Análisis de situaciones especiales</div>
+        <p class="get-text">Si tu caso tiene alguna particularidad —por ejemplo, un ex que vive en otro país, dificultades para ubicarlo, matrimonio con extranjero o documentación extranjera— la revisamos dentro de la consulta. Tu caso no se analiza como si fuera idéntico al de cualquier otra persona.</p>
+      </div>
+      <div class="get-item">
+        <div class="get-title">Claridad sobre qué hacer después</div>
+        <p class="get-text">Al terminar la auditoría tendrás una visión concreta de: qué tienes, qué te falta, qué debemos revisar, qué podría complicar tu caso, qué alternativa tienes y cuál es el siguiente paso. No sales con más información. Sales con una dirección.</p>
+      </div>
+    </div>
+    <p class="obtienes-note r d2"><strong>Y hay algo más importante:</strong> no tienes que decidir durante la consulta si quieres contratar el divorcio. Primero entendemos tu situación, después conoces tus alternativas y recién entonces decides. Si tu caso está en condiciones de avanzar y quieres que nos encarguemos del proceso, podrás continuar con Divorcio Internacional Simple. La auditoría es independiente del servicio de proceso.</p>
+    <div class="audit-box r d3" style="margin-top:48px;">
+      <span class="audit-eyebrow">Auditoría de divorcio</span>
+      <div class="audit-price">USD $39</div>
+      <p class="audit-text">45 minutos de análisis jurídico de tu caso.<br>Para que antes de comenzar a gastar tiempo, dinero y energía en tu divorcio, sepas exactamente dónde estás y qué camino tienes por delante.</p>
+      <a href="https://pay.hotmart.com/M106893076E?checkoutMode=10" target="_blank" class="btn-gold">Quiero auditar mi caso</a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. PAGO -->
+<section class="pago" aria-label="Tu inversión, en tus propios términos">
+  <div class="w">
+    <h2 class="pago-title r">Tu inversión, en tus propios términos</h2>
+    <p class="pago-text r d1">He diseñado esta experiencia para que puedas acceder a ella desde cualquier lugar del mundo, con la misma facilidad y cuidado con que fue creada. El pago se procesa a través de Hotmart, una plataforma internacional que permite realizar tu inversión de forma segura desde el país donde resides.</p>
+    <p class="pago-text r d2"><strong>Tu moneda. Tu elección.</strong> El sistema realiza automáticamente la conversión a tu moneda local, para que conozcas el importe antes de confirmar tu pago.</p>
+    <p class="pago-text r d3"><strong>La posibilidad de elegir.</strong> Dependiendo de tu país de residencia y de los medios de pago disponibles, podrás optar por pagar en cuotas y elegir la modalidad que mejor se adapte a ti.</p>
+    <p class="pago-text r d4"><strong>Y una vez que confirmas, todo comienza.</strong> Recibirás tu confirmación de inmediato y podrás agendar tu sesión para dar el primer paso hacia una nueva etapa con claridad y tranquilidad.</p>
+    <p class="pago-nota r d5">Presupuesto cerrado para tu tranquilidad</p>
+    <p class="pago-text r d5" style="margin-top:16px;">Al finalizar tu diagnóstico, si tu caso es viable y decides avanzar conmigo, recibirás una propuesta personalizada con una inversión total y definida para tu proceso. Desde el primer día tendrás claridad sobre el camino, los servicios incluidos y la inversión necesaria para cerrar esta etapa en Chile desde el lugar donde hoy construyes tu vida.</p>
+  </div>
+</section>
+
+<!-- 7. FAQ -->
+<section class="faq" aria-label="Preguntas frecuentes">
+  <div class="w">
+    <h2 class="faq-title r">Las preguntas que me hacen antes de reservar.</h2>
+    <div class="r d1">
+      <details class="faq-item"><summary>¿Y si estoy en el extranjero y no sé si puedo divorciarme en Chile?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si ninguno de los dos vive actualmente en Chile?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si no sé qué documentos necesito?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si estoy en otro país y no puedo ir al consulado?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si mi ex vive en otro país?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si mi ex no quiere divorciarse?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si mi caso es más complicado de lo normal?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si después descubro que el tribunal no era competente?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si tengo documentos del país donde vivo?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si tengo hijos?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si después necesito demostrar en el extranjero que estoy divorciada?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si pago y después aparecen problemas que nadie me había explicado?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y si mi situación cambia después de haber comenzado?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Y cuánto me va a costar?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+      <details class="faq-item"><summary>¿Entonces qué me garantizan?</summary><p class="faq-answer">[Completa aquí la respuesta]</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CIERRE -->
+<section class="cierre" aria-label="Reservar Auditoría de Divorcio">
+  <div class="w">
+    <span class="eyebrow r" style="color:var(--gold2);">El siguiente paso</span>
+    <h2 class="cierre-h r d1">Cerrar tu divorcio en Chile<br>empieza con<br>una conversación de<br><em>45 minutos.</em></h2>
+    <div class="r d2"><a href="https://pay.hotmart.com/M106893076E?checkoutMode=10" target="_blank" class="btn-outline"><span>Reservar mi diagnóstico inicial — USD $39</span></a></div>
+    <p class="cierre-note r d3">Cupos limitados · Pago seguro · Confirmación inmediata</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p class="foot-name">Paulina Sanhueza Cortés</p>
+  <p class="foot-role">ABOGADA</p>
+  <p class="foot-role" style="margin-top:10px;">hola@divorcioenchile.com</p>
+  <p class="foot-role" style="margin-top:6px;">© Divorcio Internacional</p>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on');});},{threshold:0.06});
+  document.querySelectorAll('.r').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
